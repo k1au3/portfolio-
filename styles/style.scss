@@ -6,4 +6,12 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    background-image: url(../images/nahel.jpg), url(../images/lance-asper-N9Pf2J656aQ-unsplash.jpg),url(../images/max-bender-XIVDN9cxOVc-unsplash.jpgS);
+    background-repeat: no-repeat,
+    no-repeat,
+    no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position-x: left,
+    right;
 }
