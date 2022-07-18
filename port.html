@@ -7,15 +7,29 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="home">
         <span id="welcome">Welcome</span> <br>
-        <span id="name">I'm Brian Kipchumba</span><br>
-        Based in Eldoret, Kenya <br>
-        <a href="" class="btn">Hire Me</a>
+        <div class="container">
+            I am <span> <strong> Brian Kipchumba </strong></span>
+               <!-- <span>web designer</span>
+                <span>Developer</span>
+                <span>Products designer.</span>-->
+            </div>
+    
+        </div>
+        
+        <span id="based">Based in Eldoret, Kenya</span> <br>
+        <nav>
+            <a href="mailto:brianlim002@gmail.com" class="button">
+                <span class="availability fontawesome-remove">Currently Unavailable</span>
+                <span class="hire-me">Hire Me</span>
+            </a>
+        </nav>
     </header>
     <article class="about">
         <h1> <strong> Know Me More </strong></h1>
@@ -24,18 +38,71 @@
                 <p></p>
         </div>
     </article>
-    <nav id='menu'>
-        <!--profile image-->
-        <img src="" alt="">
-        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-        <ul>
-          <li><a href='http://'>Home</a></li>
-          <li><a href='http://'>About me</a></li>
-          <li><a href='http://'>What i do</a></li>
-          <li><a href='http://'>Resume</a></li>
-          <li><a href='http://'>Portfolio</a></li>
-          <li><a href='http://'>Contact</a></li>
-        </ul>
+    <nav class="sidebar">
+        <div class="profile">
+            
+            <img src="../portfolio-/images/naruto.jpg" alt="">
+            <h3 class="sidehead">Brian Kipchumba</h3>
+        </div>
+        
+        <div class="sidemenu">
+            <ul>  
+                <li>
+                    <a href=#>
+                    <span class="item">Home</span></a>
+                </li>
+
+                <li>
+                    <a href=#>
+                    <span class="item">About Me</span></a>
+                </li>
+
+                <li>
+                    <a href=#>
+
+                    <span class="item">What I do</span></a>
+                
+                </li>
+
+                <li>
+                    <a href=#>
+                    <span class="item">Resume</span></a>
+                </li>
+
+                <li>
+                    <a href=#>
+                    <span class="item">Contact</span></a>
+                </li>
+
+              </ul>
+
+              
+        </div>
+
+        <div>
+            <footer class="foot">
+                <ul>
+                    <li>
+                        <a href="https://www.twitter.com/b3liot" target="_blank"><span class="icon"> <i class="fa fa-twitter" aria-hidden="true"></i> </span></a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://www.github.com/k1au3" target="_blank"> <span class="icon">  <i class="fa fa-github" aria-hidden="true"></i> </span></a>
+                    </li>
+    
+                    <li>
+         
+                        <a href="https://www.linkedin/in/k1au3" target="_blank"> <span class="icon"> <i class="fa fa-linkedin" aria-hidden="true"></i></span></a>
+                    </li>    
+
+                </ul>
+               
+                
+ 
+               </footer>
+
+        </div>
+      
     </nav>
     
 </body>
