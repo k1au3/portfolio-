@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* button*/
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12px 30px;
+  margin: 10px 0;
+  font-size: 14px;
+  border-radius: 30px;
+  border: none;
+  transition: 0.4s;
+  background-color: #212529;
+  color: #20c997;
+  text-align: center;
+}
+.button:hover {
+  background-color: #20c997;
+  color: #212529;
+  transform: scale(1.2);
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./images/nikit.jpg);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  /*nav*/
+}
+.home .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  flex-wrap: wrap;
+}
+.home .prof-img {
+  font-family: "Mochiy Pop One", sans-serif;
+  color: white;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+.home .prof-img span {
+  color: #dc3545;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+.home .sidemenu ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.6rem 1.3rem;
+}
+.home .sidemenu ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+.home .sidemenu ul li a:hover {
+  color: #20c997;
+  transition: 0.4s;
+}
+.home .icons ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.5em;
+}
+.home .icons ul li a {
+  color: #20c997;
+  font-size: 1rem;
+}
+.home .icons ul li a:hover {
+  color: #dc3545;
+  transition: 0.4s;
+  transform: scale(1.2);
+}
+.home .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding-top: 10rem;
+  color: white;
+}
+.home .hero #hero {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.home .hero h3 {
+  font-size: 3rem;
+}
+.home .hero #name {
+  color: #dc3545;
+}
+.home .hero #based {
+  font-size: 2rem;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  padding-top: 10rem;
+  background-color: #212529;
+  color: white;
+}
+.container #know {
+  font-size: 2rem;
+  display: inline;
+  padding-left: 40%;
+  padding-right: 40%;
+}
+.container .know {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-between;
+}/*# sourceMappingURL=styles.css.map */
