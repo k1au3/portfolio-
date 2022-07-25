@@ -6,122 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="../portfolio-/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../portfolio-/scss/fontawesome.scss">
+    <link rel="stylesheet" href="../portfolio-/scss/fontawesome.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
 </head>
 <body>
 
     <!--Sidebar-->
 
-    <nav class="nav">
-
-        <div class="profile">
-
-            <div class="prof-img">
-
-                <img src="../portfolio-/images/naruto.jpg" alt="profile picture">
-
-                <span>
-                    Brian Kipchumba
-                </span>
-
-            </div>
-
-        </div>
-
-        <div class="sidemenu">
-
-            <ul>
-                <a href="#">
-                    <li>Home</li>
-                    
-                </a>
-                <a href="#">
-                    <li>About Me</li>
-                    
-                </a>
-                <a href="#">
-                    <li>What I Do</li>
-                    
-                </a>
-                
-                <a href="#">
-                    <li>My Skills</li>
-                    
-                </a>
-                <a href="#">
-                    <li>Portfolio</li>
-                    
-                </a>
-                <a href="#">
-                    <li>Contact</li>
-                    
-                </a>
-                
-            </ul>
-
-        </div>
-
-        <div class="icons">
-            
-            <a href="https://www.facebook.com/brian-limo">
-                <ul>
-                    <li>
-                        <i class="fa fa-facebook-official" aria-hidden="true" title="facebook"></i>
-                    </li>
-                </ul>
-            </a>
-            <a href="https://www.twitter.com/b3liot">
-                <ul>
-                    <li>
-                        <i class="fa fa-twitter-square" aria-hidden="true" title="twittwe"></i>
-                    </li>
-                </ul>
-            </a>
-
-            <a href="https://www.github.com/k1au3">
-                <ul>
-                    <li>
-                        <i class="fa fa-github-square" aria-hidden="true" title="github"></i>
-                    </li>
-                </ul>
-            </a>
-
-            <a href="https://www.linkedin.com/in/k1au3">
-                <ul>
-                    <li>
-                        <i class="fa fa-linkedin-square" aria-hidden="true" title="linkedin"></i>
-                    </li>
-                </ul>
-            </a>
-
-
-        </div>
-    </nav>
-
+   
     <!--Home-->
 
-    <div class="container">
+    <div class="home" >
+        <nav  class="nav">
 
-        <span>
-            Welcome
-        </span>
+            <div class="profile">
+    
+                <div class="prof-img">
+                    
+                    portfo
+                    <span>
+                        lio
+                    </span>
+    
+                </div>
+    
+            </div>
+    
+            <div class="sidemenu">
+    
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">About Me</a>
+                    </li>
+
+                    <li>
+                        <a href="#">What I Do</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>  
+                       
+                </ul>
+    
+            </div>
+    
+            <div class="icons">
+
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/brian-limo">
+                            <i class="fa fa-facebook" aria-hidden="true" title="facebook"></i>
+                        </a>
+                        
+                        
+                    </li>
+
+                    <li>
+                        <a href="https://www.twitter.com/b3liot">
+                            <i class="fa fa-twitter" aria-hidden="true" title="twitter"></i>
+                        </a>
+                       
+                    </li>
+                    
+                    <li>
+                        <a href="https://www.github.com/k1au3">
+                            <i class="fa fa-github-square" aria-hidden="true" title="github"></i>
+                        </a>
+                      
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/k1au3">
+                            <i class="fa fa-linkedin-square" aria-hidden="true" title="linkedin"></i>
+                        </a>
+                       
+                    </li>
+                </ul>
+            
+            </div>
+        </nav>
+
+        <div class="hero">
+            <span id="hero">
+                Welcome
+            </span>
+            
+            <!--animated header-->
+            <h3>I'm Brian <span id="name">Kipchumba</span></h3>
+    
+            <span id="based">
+                Based in Eldoret, Kenya
+            </span>
+    
+            <a href="mailto:k1au3@proton.me">
+                <button class="button"> Hire Me</button>
+            </a>
+        </div>
+
         
-        <!--animated header-->
-        <h3>I'm Brian Kipchumba</h3>
-
-        <span>
-            Based in Eldoret, Kenya
-        </span>
-
-        <a href="mailto:k1au3@proton.me">
-            <button class="button"> Hire Me</button>
-        </a>
     </div>
 
-    <!--Know  mw more-->
-
-    <div class="container">
-        <h2>Know Me More</h2>
+    <!--Know  mw more bg my image-->
+   <div class="container">
+    <h2 id="know">Know Me More</h2>
+    <div class="know">
+        
         <div class="left-graph">
             <span>I'm <span>Brian Kipchumba,</span> a Web Developer</span>
 
@@ -148,19 +147,21 @@
                 </li>
             </ul> 
 
-            <!--attach cv-->
-
-            <a href="#">
-                <button class="button">
-                    Download CV
-                </button>
-            </a>
         </div>
-    </div>
+        <!--attach cv-->
 
+        
+    </div>
+    <a href="#">
+        <button class="button">
+            Download CV
+        </button>
+    </a>
+
+   </div>
     <!--what i do-->
 
-    <div class="container">
+    <div class="whatido">
         <h2>What I Do</h2>
         <div class="what-i-do">
             <div class="graphic-design">
@@ -247,7 +248,7 @@
 
     <!--Skills-->
 
-    <div class="container">
+    <div class="skills">
 
         <h3>
             My Skills
@@ -345,7 +346,7 @@
 
     <!--get in touch-->
 
-    <div class="container">
+    <div class="touch">
 
         <h3>
            Get in Touch 
@@ -440,7 +441,7 @@
     <footer>
 
         <div>
-           <span>copyright <i class="fa fa-copyright" aria-hidden="true"></i> <a href="../portfolio-/LICENCE">K1au3</a>. All Rights Reserved.
+           <span>copyright <i class="fa fa-copyright" aria-hidden="true"></i> <a href="https://github.com/k1au3/portfolio-/blob/K1au3/LICENCE">K1au3</a>. All Rights Reserved.
            </span>
         </div>
 
