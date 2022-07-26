@@ -7,7 +7,7 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
-/* button*/
+/* buttons*/
 .button {
   cursor: pointer;
   text-decoration: none;
@@ -17,13 +17,32 @@
   border-radius: 30px;
   border: none;
   transition: 0.4s;
-  background-color: #212529;
-  color: #20c997;
+  background-color: #20c997;
+  color: rgba(0, 0, 0, 0.95);
   text-align: center;
 }
 .button:hover {
+  background-color: #dc3545;
+  color: white;
+  transform: scale(1.2);
+}
+
+.btninverse {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12px 30px;
+  margin: 10px 0;
+  font-size: 14px;
+  border-radius: 30px;
+  border: none;
+  transition: 0.4s;
+  background-color: rgb(255, 105, 0);
+  color: white;
+  text-align: center;
+}
+.btninverse:hover {
   background-color: #20c997;
-  color: #212529;
+  color: rgba(0, 0, 0, 0.95);
   transform: scale(1.2);
 }
 
@@ -106,11 +125,12 @@
   font-size: 2rem;
 }
 
+/*container*/
 .container {
   height: 100vh;
   width: 100%;
   padding-top: 10rem;
-  background-color: #212529;
+  background-image: linear-gradient(#212529, rgba(0, 0, 0, 0.95));
   color: white;
 }
 .container #know {
@@ -118,10 +138,293 @@
   display: inline;
   padding-left: 40%;
   padding-right: 40%;
+  font-weight: 800;
+}
+.container #know span {
+  -webkit-text-decoration: underline #20c997;
+          text-decoration: underline #20c997;
 }
 .container .know {
+  width: 100vw;
+  padding: 2em;
   display: flex;
-  width: 100%;
-  padding: 1rem;
+  flex-wrap: wrap;
   justify-content: space-between;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+.container .know .left-graph {
+  display: inline-block;
+  width: 70%;
+  flex-wrap: wrap;
+}
+.container .know .left-graph span {
+  font-size: 1.5rem;
+}
+.container .know .left-graph span span {
+  color: rgb(255, 105, 0);
+}
+.container .know .left-graph p {
+  opacity: 0.7;
+}
+.container .know .right-graph {
+  text-decoration: none;
+  opacity: 0.7;
+}
+.container .know .right-graph ul li {
+  list-style-type: none;
+  padding-right: 3rem;
+}
+.container .know .right-graph ul li span {
+  font-weight: 700;
+}
+.container .know .right-graph a {
+  padding-top: 2.5rem;
+}
+
+/*What i do*/
+.whatido {
+  height: 100%;
+  width: 100vw;
+  padding-top: 7%;
+  background-image: linear-gradient(#212529, rgba(0, 0, 0, 0.95));
+  color: white;
+}
+.whatido h2 {
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: center;
+}
+.whatido h2 span {
+  -webkit-text-decoration: underline #20c997;
+          text-decoration: underline #20c997;
+}
+.whatido .what-i-do {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 2rem;
+}
+@media screen and (max-width: 50em) {
+  .whatido .what-i-do {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.whatido .what-i-do div {
+  line-height: 2rem;
+  padding: 0.5rem;
+}
+.whatido .what-i-do div div {
+  font-size: 2.5rem;
+}
+.whatido .what-i-do h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #20c997;
+}
+.whatido .what-i-do p {
+  font-size: 1rem;
+}
+
+/*Skills*/
+.skills {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 7%;
+  background-image: linear-gradient(#212529, rgba(0, 0, 0, 0.95));
+  color: white;
+}
+.skills h3 {
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: center;
+}
+.skills h3 span {
+  -webkit-text-decoration: underline #20c997;
+          text-decoration: underline #20c997;
+}
+.skills .skill {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding: 2rem;
+}
+.skills .skill h4 {
+  margin: 5px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.skills .skill li {
+  margin: 1.2rem 0;
+  padding: 0.6rem;
+}
+.skills .skill .bar {
+  background: #212529;
+  display: block;
+  height: 0.5rem;
+  border: 1px solid #dc3545;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.skills .skill .bar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.skills .skill .bar span {
+  height: 10px;
+  float: left;
+  background: #dc3545;
+}
+.skills .skill .bar .html {
+  width: 97%;
+  -webkit-animation: html 3s;
+          animation: html 3s;
+}
+.skills .skill .bar .css {
+  width: 95%;
+  -webkit-animation: css 3s;
+          animation: css 3s;
+}
+.skills .skill .bar .tail {
+  width: 83%;
+  -webkit-animation: tail 3s;
+          animation: tail 3s;
+}
+.skills .skill .bar .java {
+  width: 92%;
+  -webkit-animation: java 3s;
+          animation: java 3s;
+}
+.skills .skill .bar .react {
+  width: 89%;
+  -webkit-animation: react 3s;
+          animation: react 3s;
+}
+.skills .skill .bar .angular {
+  width: 86%;
+  -webkit-animation: angular 3s;
+          animation: angular 3s;
+}
+.skills .skill .bar .git {
+  width: 94%;
+  -webkit-animation: git 3s;
+          animation: git 3s;
+}
+@-webkit-keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 97%;
+  }
+}
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 97%;
+  }
+}
+@-webkit-keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+@-webkit-keyframes tail {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 83%;
+  }
+}
+@keyframes tail {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 83%;
+  }
+}
+@-webkit-keyframes java {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 92%;
+  }
+}
+@keyframes java {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 92%;
+  }
+}
+@-webkit-keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 89%;
+  }
+}
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 89%;
+  }
+}
+@-webkit-keyframes angular {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 86%;
+  }
+}
+@keyframes angular {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 86%;
+  }
+}
+@-webkit-keyframes git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 94%;
+  }
+}
+@keyframes git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 94%;
+  }
+}
+.skills a {
+  text-align: center;
+  padding-left: 40%;
 }/*# sourceMappingURL=styles.css.map */

@@ -5,9 +5,10 @@
 
     $secondarycolor:#20c997;
     $primarycolorhead:white ;
+    $titlecol:rgba(255, 105, 0,1);
     $coloryears:#dc3545;
-    $primarybg:rgb(0 0 0 / 95%);
-    $primarycolor:#212529;
+    $primarycolor:rgb(0 0 0 / 95%);
+    $primarybg:#212529;
     $fontfamilyprimary: 'Nunito Sans', sans-serif;
     $fontfamilyhead: 'Mochiy Pop One', sans-serif;
     $fontweightlight:300;
@@ -15,6 +16,7 @@
     $fontweightsemi:600;
     $fontweightbold:700;
     $fontweightbolder:800;
+
     
     *{
         padding: 0;
@@ -23,7 +25,7 @@
         font-family: $fontfamilyprimary;
 
     }
-     /* button*/
+     /* buttons*/
     
     
         
@@ -37,9 +39,29 @@
     border-radius: 30px;
     border: none;
     transition: .4s;
-    background-color: $primarycolor;
+    background-color: $secondarycolor;
     
-    color: $secondarycolor;
+    color: $primarycolor;
+
+    text-align: center;
+    &:hover{
+        background-color:$coloryears;
+        color: $primarycolorhead;
+        transform:scale(1.2);
+        }
+    }
+    .btninverse{
+        cursor: pointer;
+    text-decoration: none;
+    padding: 12px 30px;
+    margin: 10px 0;
+    font-size: 14px;
+    border-radius: 30px;
+    border: none;
+    transition: .4s;
+    background-color: $titlecol;
+    
+    color: $primarycolorhead;
 
     text-align: center;
     &:hover{
@@ -136,11 +158,13 @@
         }
     }
     
+
+    /*container*/
     .container{
         height: 100vh;
         width: 100%;
         padding-top: 10rem;
-        background-color: $primarycolor;
+        background-image: linear-gradient($primarybg, $primarycolor) ;
         color: $primarycolorhead;
         
 
@@ -149,27 +173,273 @@
             display: inline;
             padding-left: 40%;
             padding-right: 40%;
+            font-weight: $fontweightbolder;
+            span{
+                text-decoration: underline $secondarycolor;
+            }
             
         }
 
         .know{
-            display: flex;
-            width: 100%;
-            padding: 1rem;
-            justify-content: space-between;
+            width: 100vw;
+            padding: 2em;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          font-size: 1.2rem;
+          line-height: 2.5rem;
+          .left-graph{
+            display: inline-block;
+            width: 70%;
+            flex-wrap: wrap;
+            
+            span{
+                font-size: 1.5rem;
+                span{
+                    color: $titlecol;
+                }
 
-            .left-graph{
-                
             }
-            .right-graph ul {
-               
-                
-                
-                
-               
+            p{
+                opacity: 0.7;
             }
+          }
+          .right-graph{
+            
+            text-decoration: none;
+            opacity: 0.7;
+           
+            
+            ul li{
+                list-style-type: none;
+                padding-right: 3rem;
+
+
+                span{
+                    font-weight: $fontweightbold;
+    
+                }
+            }
+            a{
+                padding-top: 2.5rem;
+            }
+
+            
+          }
+                
+                
+                
+               
+            
         }
         
     }
-     
+
+    /*What i do*/
+
+    .whatido{
+        height: 100%;
+        width: 100vw;
+        padding-top: 7%;
+        background-image: linear-gradient($primarybg, $primarycolor) ;
+        color: $primarycolorhead;
+       
+        h2{
+            font-weight: $fontweightbolder;
+            font-size: 2rem;
+           // display: inline-block;
+            //justify-content:flex-start;
+            text-align: center;
+            span{
+                text-decoration: underline $secondarycolor;
+            }
+        }
+        .what-i-do{
+        display: grid;
+        //grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr ;
+        gap: 1rem;
+        padding: 2rem;
+
+        @media screen and (max-width:50em) {
+            display:grid;
+            grid-template-columns: 1fr;
+            
+        }
+        div{
+            line-height: 2rem;
+            padding: .5rem;
+            div{
+                font-size: 2.5rem;
+            }
+        }
+        h3{
+            font-weight: $fontweightbold;
+            font-size: 1.5rem;
+            color: $secondarycolor;
+        }
+        p{
+            font-size: 1rem;
+        }
+
+        }
+        
+    }
+
+    /*Skills*/
+    .skills{
+        height: 100vh;
+        width: 100vw;
+        padding-top: 7%;
+        background-image: linear-gradient($primarybg, $primarycolor) ;
+        color: $primarycolorhead;
+        h3{
+            font-weight: $fontweightbolder;
+            font-size: 2rem;
+           // display: inline-block;
+            //justify-content:flex-start;
+            text-align: center;
+            span{
+                text-decoration: underline $secondarycolor;
+            }
+            
+        
+        }
+        .skill{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            list-style: none;
+            padding : 2rem;
+            h4{
+                margin: 5px;
+                font-weight: $fontweightbold;
+                font-size: 1.2rem;
+            }
+
+            li{
+                margin: 1.2rem 0;
+                padding: .6rem;
+
+            }
+            .bar{
+                background: $primarybg;
+                display: block;
+                height: .5rem;
+                border: 1px solid $coloryears;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 1px 3px rgba(0, 0, 0 ,0.12), 0 1px 2px rgba(0, 0, 0 ,0.24);
+                transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+                &:hover{
+                    box-shadow: 0 14px 28px rgba(0, 0, 0 ,0.25), 0 10px 10px rgba(0, 0, 0 ,0.22);
+                }
+                span{
+                    height: 10px;
+                    float: left;
+                    background: $coloryears;
+                    
+                }
+                .html{
+                    width: 97%;
+                    animation: html 3s;
+                }
+                .css{
+                    width: 95%;
+                    animation: css 3s;
+                }
+                .tail{
+                    width: 83%;
+                    animation: tail 3s;
+                }
+                .java{
+                    width: 92%;
+                    animation: java 3s;
+                }
+                .react{
+                    width: 89%;
+                    animation: react 3s;
+                }
+                .angular{
+                    width: 86%;
+                    animation: angular 3s;
+                }
+                .git{
+                    width: 94%;
+                    animation: git 3s;
+                }
+                @keyframes html {
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 97%;
+                    }
+                }
+                @keyframes css {
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 95%;
+                    }
+                }
+                @keyframes tail {
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 83%;
+                    }
+                }
+                @keyframes java{
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 92%;
+                    }
+                }
+                @keyframes react {
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 89%;
+                    }
+                }
+                @keyframes angular {
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 86%;
+                    }
+                }
+                @keyframes git {
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 94%;
+                    }
+                }
+            }
+        }
+        a {
+            text-align: center;
+            padding-left: 40%;
+            
+           
+           
+            
+        
+    }
+    }
+
+
+    
+
+   
   
+
+    
