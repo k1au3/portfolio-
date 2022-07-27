@@ -245,10 +245,20 @@
           text-decoration: underline #20c997;
 }
 .skills .skill {
+  height: 60%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   list-style: none;
-  padding: 2rem;
+  padding: 1rem;
+}
+@media screen and (max-width: 50em) {
+  .skills .skill {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 80%;
+    padding: 0;
+  }
 }
 .skills .skill h4 {
   margin: 5px;
@@ -256,10 +266,11 @@
   font-size: 1.2rem;
 }
 .skills .skill li {
-  margin: 1.2rem 0;
-  padding: 0.6rem;
+  margin: 0rem;
+  overflow: hidden;
 }
 .skills .skill .bar {
+  margin: 1rem;
   background: #212529;
   display: block;
   height: 0.5rem;
@@ -425,6 +436,105 @@
   }
 }
 .skills a {
+  margin-bottom: 3px;
   text-align: center;
   padding-left: 40%;
+}
+
+.touch {
+  margin: 0;
+  padding: 2rem;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(#212529, rgba(0, 0, 0, 0.95));
+  color: white;
+  color: white;
+  padding-top: 7%;
+}
+.touch h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.touch h3 span {
+  -webkit-text-decoration: underline #20c997;
+          text-decoration: underline #20c997;
+}
+.touch .cont {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 50em) {
+  .touch .cont {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1.2rem;
+  }
+}
+.touch .cont aside {
+  padding-bottom: 2rem;
+}
+.touch .cont aside span {
+  font-weight: 700;
+}
+.touch .cont p {
+  opacity: 0.7;
+  line-height: 2.5rem;
+}
+.touch .cont .socials {
+  padding-top: 2rem;
+}
+.touch .cont .socials h4 {
+  opacity: 0.6;
+}
+.touch .cont .socials ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 1.2rem;
+  color: white;
+}
+.touch .cont .right {
+  width: 100%;
+}
+.touch .cont .right h4 {
+  font-weight: 800;
+  opacity: 0.7;
+}
+.touch .cont .right form input {
+  width: 100%;
+  height: 3rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+  opacity: 0.6;
+  background-color: #212529;
+  color: white;
+  box-shadow: none;
+  border: none;
+}
+.touch .cont .right .textarea {
+  height: 8rem;
+  width: 70%;
+  text-align: center;
+  padding-top: 0;
+  justify-content: flex-start;
+}
+
+footer {
+  height: 20vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  font-size: 1rem;
+}
+footer a {
+  text-decoration: none;
+  color: #20c997;
+}
+footer a:hover {
+  text-transform: uppercase;
+  color: #dc3545;
 }/*# sourceMappingURL=styles.css.map */
